@@ -1,0 +1,24 @@
+@import "../../styles/_colors.scss";
+
+.expense-date {
+    background-color: $white;
+    color: $black;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__month {
+        font-weight: 700;
+    }
+
+    &__year {
+        font-size: 0.75rem;
+    }
+
+    &__day {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
