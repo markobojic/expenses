@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const expenses = [
+        {
+            id: "1",
+            date: new Date(2022, 11, 16),
+            title: "React course",
+            amount: 16.0,
+        },
+        {
+            id: "2",
+            date: new Date(2022, 10, 25),
+            title: "Jakna",
+            amount: 360.0,
+        },
+        {
+            id: "3",
+            date: new Date(2022, 10, 26),
+            title: "Pantalone",
+            amount: 320.0,
+        },
+    ];
+
+    return (
+        <div>
+            <Expenses expenses={expenses} />
+        </div>
+    );
 }
 
 export default App;
