@@ -1,0 +1,33 @@
+@import "../../../styles/_colors.scss";
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
+    border: none;
+
+    &__primary {
+        background-color: $white;
+        color: $primary-color;
+        transition: 0.2s all ease;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+
+    &__secondary {
+        background-color: $black;
+        color: $white;
+        transition: 0.2s all ease;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 import "./ExpenseDate.scss";
 
 function ExpenseDate({ date }) {
