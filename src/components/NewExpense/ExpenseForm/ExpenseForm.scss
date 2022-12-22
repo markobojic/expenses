@@ -1,0 +1,23 @@
+@import "../../../styles/_colors.scss";
+
+.new-expense {
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        > div {
+            width: calc(50% - 0.5rem);
+
+            @media screen and (max-width: 580px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

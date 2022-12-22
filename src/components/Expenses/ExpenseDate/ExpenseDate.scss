@@ -1,10 +1,9 @@
-@import "../../styles/_colors.scss";
+@import "../../../styles/_colors.scss";
 
 .expense-date {
     background-color: $white;
     color: $black;
     padding: 1rem 2rem;
-    border-radius: 0.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;

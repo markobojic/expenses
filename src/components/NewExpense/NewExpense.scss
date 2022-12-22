@@ -1,0 +1,13 @@
+@import "../../styles/_colors.scss";
+
+.new-expense__wrapper {
+    background: $primary-color;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+
+    &.add-button {
+        display: flex;
+        justify-content: space-around;
+    }
+}
