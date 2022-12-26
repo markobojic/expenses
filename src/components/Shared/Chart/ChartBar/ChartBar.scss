@@ -1,0 +1,30 @@
+@import "../../../../styles/colors";
+
+.chart-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__outer {
+        height: 100%;
+        width: 1rem;
+        border-radius: 0.75rem;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    &__inner {
+        background-color: $primary-color;
+        width: 100%;
+        transition: all 0.3s ease-out;
+    }
+
+    &__label {
+        font-weight: 700;
+        font-size: 0.5rem;
+    }
+}
